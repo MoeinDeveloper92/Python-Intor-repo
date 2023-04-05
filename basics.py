@@ -1,8 +1,12 @@
-a= int(input("Enter a number \n"))
-b = int(input("Enter another number \n"))
+#bellow I want to define a global variable
+myName = "moein samani nejad"
 
+print("Hello "+myName)
+def myfunction():
+    global myName
+    myName="Web developer"
+    print("Hello " + myName)
 
-if(a>b):
-    print(a ,"is greater than", b)
-else:
-    print(a," is lower than ",b)
+myfunction()
+
+print("Hello "+myName)
