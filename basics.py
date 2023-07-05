@@ -1,12 +1,10 @@
-#bellow I want to define a global variable
-myName = "moein samani nejad"
+import pandas as pd
+#bellow we create a data frame
+data = {'name':['Moein',"Darya","Mohsen"],
+'age':[30,25,35],
+'Country':["Iran","Germany","USA"]}
 
-print("Hello "+myName)
-def myfunction():
-    global myName
-    myName="Web developer"
-    print("Hello " + myName)
+df = pd.DataFrame(data)
 
-myfunction()
-
-print("Hello "+myName)
+#bellow we print out the data
+print((df))
